@@ -251,7 +251,7 @@
                         </svg>
                         <div>
                             <h3 class="contacts__info-title">Адрес</h3>
-                            <p class="contacts__info-text">ул. Спокойствия, 10, Ростов-на-Дону</p>
+                            <p class="contacts__info-text">ул. Семашко 48г , Ростов-на-Дону</p>
                         </div>
                     </div>
 
@@ -298,52 +298,55 @@
                     </div>
                 </div>
 
-               <div class="contacts__form-wrapper">
-    <form class="form" id="contact-form" action="https://formspree.io/f/mykkyojb" method="POST">
-        <h3 class="form__title">Записаться на занятие</h3>
+                <div class="contacts__form-wrapper">
+                    <form class="form" id="contact-form" action="https://formspree.io/f/mykkyojb" method="POST">
+                        <h3 class="form__title">Записаться на занятие</h3>
 
-        <div class="form__group">
-            <label for="name" class="form__label">Имя *</label>
-            <input type="text" id="name" name="name" class="form__input" required placeholder="Ваше имя">
-            <span class="form__error" id="name-error"></span>
+                        <div class="form__group">
+                            <label for="name" class="form__label">Имя *</label>
+                            <input type="text" id="name" name="name" class="form__input" required placeholder="Ваше имя">
+                            <span class="form__error" id="name-error"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email *</label>
+                            <input type="email" id="email" name="email" class="form__input" required placeholder="your@email.com">
+                            <span class="form__error" id="email-error"></span>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="message" class="form__label">Сообщение</label>
+                            <textarea id="message" name="message" class="form__textarea" rows="4" placeholder="Расскажите о своём опыте занятий или задайте вопрос..."></textarea>
+                        </div>
+
+                        <!-- Скрытые поля для Formspree -->
+                        <input type="hidden" name="_subject" value="Запись на занятие - SunFlow Йога">
+                        <input type="hidden" name="_replyto" id="_replyto_field">
+                        <input type="hidden" name="_language" value="ru">
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <button type="submit" class="form__button">Отправить заявку</button>
+                        
+                        <!-- Сообщение об успешной отправке -->
+                        <div id="form-success" class="form__success" style="display: none; margin-top: 15px; padding: 10px; background: #e8f5e9; border: 1px solid #4caf50; border-radius: 4px; color: #2e7d32;">
+                            ✅ Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время!
+                        </div>
+                    </form>
+
+                    <div class="map" id="map">
+                        <iframe 
+                            src="https://yandex.ru/map-widget/v1/?ll=39.713079%2C47.222714&z=16&pt=39.713079,47.222714,pm2orgl" 
+                            width="100%" 
+                            height="300" 
+                            frameborder="0" 
+                            title="Карта студии йоги SunFlow"
+                            class="map__iframe">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="form__group">
-            <label for="email" class="form__label">Email *</label>
-            <input type="email" id="email" name="email" class="form__input" required placeholder="your@email.com">
-            <span class="form__error" id="email-error"></span>
-        </div>
-
-        <div class="form__group">
-            <label for="message" class="form__label">Сообщение</label>
-            <textarea id="message" name="message" class="form__textarea" rows="4" placeholder="Расскажите о своём опыте занятий или задайте вопрос..."></textarea>
-        </div>
-
-        <!-- Скрытые поля для Formspree -->
-        <input type="hidden" name="_subject" value="Запись на занятие - SunFlow Йога">
-        <input type="hidden" name="_replyto" id="_replyto_field">
-        <input type="hidden" name="_language" value="ru">
-        <input type="text" name="_gotcha" style="display:none">
-
-        <button type="submit" class="form__button">Отправить заявку</button>
-        
-        <!-- Сообщение об успешной отправке -->
-        <div id="form-success" class="form__success" style="display: none; margin-top: 15px; padding: 10px; background: #e8f5e9; border: 1px solid #4caf50; border-radius: 4px; color: #2e7d32;">
-            ✅ Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время!
-        </div>
-    </form>
-
-    <div class="map" id="map">
-        <iframe 
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A6c7f1a8f9a1e2d3c4b5a6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7&amp;source=constructor" 
-            width="100%" 
-            height="300" 
-            frameborder="0" 
-            title="Карта студии йоги SunFlow"
-            class="map__iframe">
-        </iframe>
-    </div>
-</div>
+    </section>
 
     <!-- Подвал -->
     <footer class="footer">
@@ -357,7 +360,7 @@
                 <div class="footer__contacts">
                     <p class="footer__contact-item">+7 (999) 123-45-67</p>
                     <p class="footer__contact-item">hello@sunflow-yoga.ru</p>
-                    <p class="footer__contact-item">ул. Спокойствия, 10</p>
+                    <p class="footer__contact-item">ул. Семашко 48г </p>
                 </div>
             </div>
 
